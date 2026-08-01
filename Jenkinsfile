@@ -6,8 +6,8 @@ pipeline {
     }
 
     environment {
-        TELEGRAM_BOT_TOKEN = '1882130871:AAHZVRwcIFKlxdsId2buT0w_3wdaZzAEtpQ'
-        TELEGRAM_CHAT_ID = '727162514'
+        TELEGRAM_BOT_TOKEN = '8989896687:AAH7gbIX0VKie9ogGsIHqDTOJFNOkh9Hoh4'
+        TELEGRAM_CHAT_ID = '8687772368'
     }
 
     stages {
