@@ -14,7 +14,7 @@ pipeline {
         stage('Run Tests in Docker') {
             steps {
                 script {
-                    docker.image('mcr.microsoft.com/playwright/python:v1.58.0-noble').inside('-u root -e HOME=/tmp') {
+                    docker.image('mcr.microsoft.com/playwright/python:v1.62.0-noble').inside('-u root -e HOME=/tmp') {
                         stage('Install Dependencies') {
                             sh '''
                             cd /var/jenkins_home/workspace/${JOB_NAME}
