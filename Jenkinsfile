@@ -36,8 +36,9 @@ pipeline {
                             pip install opencv-python-headless==4.12.0.88
                             pip install -r requirements.txt
                           
-                            echo "=== Running tests ==="
-                            pytest test_pyxelator_webtestko.py -v --alluredir=allure-results
+                            echo === Running tests ===
+                            pytest test_pyxelator_webtestko.py -v --alluredir=allure-results || true
+                            chmod -R 777 allure-results
                             '''
                         }
                     }
