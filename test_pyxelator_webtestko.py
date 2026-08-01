@@ -1,7 +1,6 @@
 from playwright.sync_api import sync_playwright, expect
 from pyxelator import find, click, fill 
 import pytest
-import cred
 import time
 import allure
 
@@ -20,9 +19,9 @@ def test_pyxelator_ft_test_ko():
 
         
         with allure.step("Mengisi email"):
-            fill(page, 'ss/email.png', cred.EMAIL)
+            fill(page, 'ss/email.png', 'uno.testing3@gmail.com')
         with allure.step("Mengisi password"):
-            fill(page, 'ss/password.png', cred.PASSWORD)
+            fill(page, 'ss/password.png', '1234567890')
         with allure.step("Klik tombol masuk"):
             click(page,'ss/masuk.png')
         expect(page.locator("//h2[@class='section-title']")).to_have_text("Semua Produk")
